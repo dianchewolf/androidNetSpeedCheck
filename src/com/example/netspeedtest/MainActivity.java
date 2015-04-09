@@ -37,6 +37,7 @@ public class MainActivity extends Activity
 	private int last_degree=0,cur_degree;
 	private DownloadTask downloadTask;
 	private final String urlString ="http://m.down.sandai.net/XLNetAcc/Android/swjsq.apk";
+	private final int threadMax =2; //2个线程下载
 	private Handler handler=new Handler()
 	{
 
@@ -104,7 +105,7 @@ public class MainActivity extends Activity
 	private void beginDownload(){
 		File file = new File(getDownloadPath());
 		try {
-			downloadTask = new DownloadTask(urlString,file,Integer.valueOf(2));
+			downloadTask = new DownloadTask(urlString,file,Integer.valueOf(threadMax));
 			downloadTask.setTaskStatusListener(downloadListener);
 			downloadTask.start();
 		} catch (MalformedURLException e) {
