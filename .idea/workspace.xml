@@ -18,17 +18,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c11d4ca0-ea84-4f4d-9520-d37a119619e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/netspeedtest/droidown/DownloadExecutor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/netspeedtest/droidown/DownloadListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/netspeedtest/droidown/DownloadLogger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/netspeedtest/droidown/DownloadTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NetSpeedTest.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" />
-      <change type="DELETED" beforePath="D:\CODE\android_code\NetSpeedTest\Screenshot_2015-02-15-17-05-51.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\CODE\android_code\NetSpeedTest\Screenshot_2015-02-15-17-06-07.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015040901.png" afterPath="$PROJECT_DIR$/2015040901.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/netspeedtest/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/example/netspeedtest/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="NetSpeedTest.iws" />
@@ -75,10 +64,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/netspeedtest/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58483756" vertical-offset="216" max-vertical-offset="5364">
+            <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="5364">
               <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -91,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.88" vertical-offset="0" max-vertical-offset="252">
-              <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.15384616" vertical-offset="0" max-vertical-offset="819">
+              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -170,8 +159,8 @@
         <option value="$PROJECT_DIR$/src/com/example/netspeedtest/droidown/DownloadTask.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/example/netspeedtest/droidown/DownloadExecutor.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/com/example/netspeedtest/MainActivity.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -618,17 +607,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.88" vertical-offset="0" max-vertical-offset="252">
-          <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/netspeedtest/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58483756" vertical-offset="216" max-vertical-offset="5364">
+        <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="5364">
           <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -637,6 +618,14 @@
             <element signature="e#4251#4252#0" expanded="true" />
             <element signature="e#4291#4292#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15384616" vertical-offset="0" max-vertical-offset="819">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
