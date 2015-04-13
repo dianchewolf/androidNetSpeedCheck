@@ -36,8 +36,10 @@ public class MainActivity extends Activity
 	private boolean flag;
 	private int last_degree=0,cur_degree;
 	private DownloadTask downloadTask;
-	private final String urlString ="http://m.down.sandai.net/XLNetAcc/Android/swjsq.apk";
-	private final int threadMax =2; //2个线程下载
+	private final String urlString ="http://down.sandai.net/thunder7/Thunder_dl_7.9.34.4908.exe";      //30M
+//	private final String urlString ="http://mirrors.zju.edu.cn/ubuntu-releases/14.04.2/ubuntu-14.04.2-desktop-amd64.iso";   //990M
+	private final int threadMax =5; // 线程个数
+
 	private Handler handler=new Handler()
 	{
 
@@ -109,7 +111,16 @@ public class MainActivity extends Activity
 			downloadTask.setTaskStatusListener(downloadListener);
 			downloadTask.start();
 		} catch (MalformedURLException e) {
+			downloadTask =  null;
 			e.printStackTrace();
+		}
+		if(downloadTask !=null){
+			handler.postDelayed(new Runnable() {
+				@Override
+				public void run() {
+					downloadTask.getDownloadExecutor().pause();
+				}
+			},15*1000);
 		}
 
 	}
@@ -152,7 +163,7 @@ public class MainActivity extends Activity
 
 		@Override
 		public void onPause(DownloadExecutor downloader, long downloadedSize) {
-
+			handler.sendEmptyMessage(0x100);
 		}
 
 		@Override
@@ -162,54 +173,11 @@ public class MainActivity extends Activity
 
 		@Override
 		public void onFinish(DownloadExecutor downloader) {
+
 			handler.sendEmptyMessage(0x100);
 		}
 	};
 
-	class DownloadThread extends Thread
-	{
-
-		@Override
-		public void run()
-		{
-			// TODO Auto-generated method stub
-
-			long start_time,cur_time;
-			URL url;
-			URLConnection connection;
-			InputStream iStream;
-			
-			try
-			{
-				url=new URL(urlString);
-				connection=url.openConnection();
-				
-				info.totalByte=connection.getContentLength();
-				
-				iStream=connection.getInputStream();
-				start_time=System.currentTimeMillis();
-				while(iStream.read()!=-1 && flag)
-				{
-					
-					info.hadfinishByte++;
-					cur_time=System.currentTimeMillis();
-					if(cur_time-start_time==0)
-					{
-						info.speed=1000;
-					}
-					else {
-						info.speed=info.hadfinishByte/(cur_time-start_time)*1000;
-					}
-				}
-				iStream.close();
-			} catch (Exception e)
-			{
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
-		
-	}
 
 	class GetInfoThread extends Thread
 	{
